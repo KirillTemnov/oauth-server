@@ -1,0 +1,8 @@
+{ name: "oauth-server",
+  description: "Server, supporting OAuth version 1.0A",
+  version: "0.1.0",
+  main: "lib/server.js",
+  engines: ["node >= 0.3.1"],
+  author: "Temnov Kirill <allselead@gmail.com>",
+  repository: {type: "git", url: "http://github.com/selead/oauth-server.git"}
+}
