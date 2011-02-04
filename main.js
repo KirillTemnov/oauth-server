@@ -1,6 +1,5 @@
-//module.exports = require('./lib');
 
-exports.version = '0.1.4';
+exports.version = '0.1.5';
 
 exports.server = require('./lib/server');
 exports.util = require('./lib/util');
@@ -8,6 +7,7 @@ exports.Consumer = require('./lib/data').Consumer;
 
 var fs = require('fs');
 
+// keys store middleware
 exports.store = {};
 
 fs.readdirSync(__dirname + '/lib/store').forEach(function(filename){
@@ -20,8 +20,5 @@ fs.readdirSync(__dirname + '/lib/store').forEach(function(filename){
 });
 
 
-/**
-* Expose getters as first-class exports.
-*/
-
+//   Expose getters as first-class exports.
 exports.__proto__ = exports.store;
