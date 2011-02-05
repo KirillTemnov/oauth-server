@@ -2,7 +2,7 @@
 * TODO Verify all steps from specification.
 * DONE Sample for OAuth consumer.
 * TODO Ability to connect middleware.
-* TODO Don't specify port separately (in server constructor)
+* DONE Don't specify port separately (in server constructor)
 * TODO Tests
 * TODO Store keys in redis.
 * TODO Move vars inside modules in settings
