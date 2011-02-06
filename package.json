@@ -1,6 +1,6 @@
 { name: "oauth-server",
   description: "Server, supporting OAuth version 1.0A",
-  version: "0.1.5",
+  version: "0.1.6",
   main: "main",
   engines: ["node >= 0.3.1"],
   author: "Temnov Kirill <allselead@gmail.com>",
