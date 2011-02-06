@@ -18,8 +18,7 @@ For correct operation of the examples requires oauth and connect installation, s
     npm install oauth connect    
 
 Launch in console from repo root:
-    node examples/server.js&
-    node examples/consumer.js&
+    (node examples/server.js& ); node examples/consumer.js&
 
 Browse to example.com:3000 and follow instructions
 
