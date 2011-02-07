@@ -4,5 +4,5 @@
 * TODO Ability to connect middleware.
 * DONE Don't specify port separately (in server constructor)
 * TODO Tests
-* TODO Store keys in redis.
+* DONE Store keys in redis.
 * TODO Move vars inside modules in settings

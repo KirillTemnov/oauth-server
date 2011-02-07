@@ -1,5 +1,5 @@
 
-exports.version = '0.1.6';
+exports.version = '0.1.7';
 
 exports.server = require('./lib/server');
 exports.util = require('./lib/util');
