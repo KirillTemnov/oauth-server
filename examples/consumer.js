@@ -63,8 +63,8 @@ function app(app) {
 }
 
 var server = connect.createServer(
-    connect.bodyDecoder(),
-    connect.cookieDecoder(),
+    connect.bodyParser(),
+    connect.cookieParser(),
     connect.session({secret: 'change-me'}),
     connect.router(app),
     connect.errorHandler({ dumpExceptions: true, showStack: true })
