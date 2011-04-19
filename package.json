@@ -1,8 +1,9 @@
 { "name": "oauth-server",
   "description": "Server, supporting OAuth version 1.0A",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "main": "main",
   "engines": ["node >= 0.3.1"],
   "author": "Temnov Kirill <allselead@gmail.com>",
+  "dependencies": { "connect": ">= 1.0", "oauth": "*" },
   "repository": {"type": "git", "url": "http://github.com/selead/oauth-server.git"}
 }
