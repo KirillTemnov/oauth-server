@@ -6,7 +6,7 @@
  */
 
 
-var sys = require('sys'),
+var util = require('util'),
     connect = require('connect'),
     url = require('url'),
     OAuth = require('oauth').OAuth;
@@ -26,7 +26,7 @@ function app(app) {
         consumer.getOAuthRequestToken(function(error, oauth_token, oauth_token_secret, results ){
             if (error) {
                 res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.write('Error in request: ' + sys.inspect(error));
+                res.write('Error in request: ' + util.inspect(error));
                 res.end();
             } else {
                 res.writeHead(302, { Location:
@@ -54,7 +54,7 @@ function app(app) {
                                                   oauth_access_token_secret + '"> Access protected resource! </a>');
                                    } else {
                                        res.writeHead(500, { 'Content-Type': 'text/html' });
-                                       res.write('Error: ' + sys.inspect(error));
+                                       res.write('Error: ' + util.inspect(error));
                                    }
                                    res.end();
                                });
